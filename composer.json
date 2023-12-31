@@ -15,21 +15,21 @@
     "minimum-stability": "stable",
     "prefer-stable": true,
     "require": {
-        "php": "^7.4"
+        "php": "~7.4|~8.3"
     },
+    "require-dev": {
+        "phpstan/phpstan": "^1.10",
+        "vimeo/psalm": "^5.18",
+        "squizlabs/php_codesniffer": "^3.8",
+        "friendsofphp/php-cs-fixer": "^3.45"
+    },
+    "repositories": [],
     "autoload": {
         "psr-4": {
             "App\\": "src/"
         },
         "files": [
         ]
-    },
-    "repositories": [],
-    "require-dev": {
-        "phpstan/phpstan": "^1.10",
-        "vimeo/psalm": "^5.18",
-        "squizlabs/php_codesniffer": "^3.8",
-        "friendsofphp/php-cs-fixer": "^3.45"
     },
     "autoload-dev": {
         "psr-4": {
