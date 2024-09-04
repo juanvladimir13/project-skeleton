@@ -11,7 +11,7 @@ composer.lock
 /nbproject
 .DS_STORE
 # Config
-.env.php
+.env
 .php-cs-fixer.cache
 /logs
 /tmp

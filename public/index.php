@@ -7,5 +7,30 @@
 
 require '../vendor/autoload.php';
 
-$config = require '../.env.php';
-echo $config['username'];
+use Bramus\Router\Router;
+
+if (array_key_exists('email', $_SESSION)) {
+    $router = new Router();
+
+    $router->get('/categoria/(\d+)',
+        '\Inventario\Http\Controllers\CCategoria@find');
+
+    $router->post('/logout', function () {
+
+    });
+
+    $router->set404(function () {
+        echo '404';
+        exit();
+    });
+    $router->run();
+    exit();
+}
+
+if ($_SERVER['REQUEST_METHOD'] == 'GET') {
+    // show login
+}
+
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    // proccess login
+}
