@@ -15,8 +15,11 @@
     "minimum-stability": "stable",
     "prefer-stable": true,
     "require": {
-        "php": "~7.4|~8.3",
-        "bramus/router": "^1.6"
+        "php": "^7.4",
+        "ext-json": "*",
+        "ext-pgsql": "*",
+        "bramus/router": "^1.6",
+        "juanvladimir13/postgres-database": "^0.1.4"
     },
     "repositories": [],
     "autoload": {
